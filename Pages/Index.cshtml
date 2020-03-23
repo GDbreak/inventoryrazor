@@ -4,7 +4,26 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>Here are all the inventory sheets submitted today:</p>
+        <table class="table">
+            <tr>
+                <th style="text-align:left;">Filename</th>
+            </tr>
+
+                @{
+        var filelist = ViewData["files"] as IEnumerable<string>;
+                }
+                @foreach (string file in filelist)
+        {
+            <tr>
+                <td>
+                    @file
+                </td>
+            </tr>
+                    }
+
+
+        </table>
+    </div>

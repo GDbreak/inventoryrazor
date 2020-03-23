@@ -1,0 +1,161 @@
+﻿@page
+@model UnitedSleepInventoryForms.RespironicsModel
+@{
+    ViewData["Title"] = "Respironics";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+
+<h1><label name="PDFinfo.Subject">Respironics Inventory Checklist</label></h1>
+
+<form method="post">
+    <table class="table">
+        <tr>
+            <th style="text-align:left;">Masks</th>
+        </tr>
+        <tr>
+            <th style="text-align:left;">Medical Supplies</th>
+            <th style="text-align:left;">Amount Onhand</th>
+            <th style="text-align:left;">Amount Needed</th>
+        </tr>
+        <tbody>
+            <tr>
+                <td>Amara View w/ Headgear Small (1090622) </td>
+                <td><input name="PDFinfo.OnHand1" type="text" /></td>
+                <td><input name="PDFinfo.Needed1" type="text" /></td>
+            </tr>
+            <tr>
+                <td>Amara View w/ Headgear Medium (1090623)  </td>
+                <td><input name="PDFinfo.OnHand2" type="text" /></td>
+                <td><input name="PDFinfo.Needed2" type="text" /></td>
+            </tr>
+            <tr>
+                <td>Amara View w/ Headgear Large (1090624) </td>
+                <td><input name="PDFinfo.OnHand3" type="text" /></td>
+                <td><input name="PDFinfo.Needed3" type="text" /></td>
+            </tr>
+            <tr>
+                <td>Nuance with Headgear (1105160) </td>
+                <td><input name="PDFinfo.OnHand4" type="text" /></td>
+                <td><input name="PDFinfo.Needed4" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Nuance Pro with Headgear (1105167)
+                </td>
+                <td><input name="PDFinfo.OnHand5" type="text" /></td>
+                <td><input name="PDFinfo.Needed5" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Wisp Youth Fabric P/SM/L (1109298)
+                </td>
+                <td><input name="PDFinfo.OnHand6" type="text" /></td>
+                <td><input name="PDFinfo.Needed6" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Wisp Fabric Frame SM/L/XL (1137360)
+                </td>
+                <td><input name="PDFinfo.OnHand7" type="text" /></td>
+                <td><input name="PDFinfo.Needed7" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Wisp Clear Frame SM/L/XL (1137361)
+
+                </td>
+                <td><input name="PDFinfo.OnHand8" type="text" /></td>
+                <td><input name="PDFinfo.Needed8" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Dreamwear Fitpack Nasal S/M/L/MW (1137380)
+
+                </td>
+                <td><input name="PDFinfo.OnHand9" type="text" /></td>
+                <td><input name="PDFinfo.Needed9" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Dreamwear Fitpack Pillow S/M/L (1137400)
+
+                </td>
+                <td><input name="PDFinfo.OnHand10" type="text" /></td>
+                <td><input name="PDFinfo.Needed10" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Dreamwear Fitpack Full S/M/L/MW (1137430)
+                </td>
+                <td><input name="PDFinfo.OnHand11" type="text" /></td>
+                <td><input name="PDFinfo.Needed11" type="text" /></td>
+            </tr>
+            </tbody>
+        </table>
+            <table class="table">
+                <tr>
+                    <th style="text-align:left;">Other supplies</th>
+                </tr>
+                <tr>
+                    <th style="text-align:left;">Medical Supplies</th>
+                    <th style="text-align:left;">Amount Onhand</th>
+                    <th style="text-align:left;">Amount Needed</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td>
+                            Cable, High Level Output, (P1080)
+                        </td>
+                        <td><input name="PDFinfo.OnHand12" type="text" /></td>
+                        <td><input name="PDFinfo.Needed12" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            PTAF2 Module (P1287)
+
+                        </td>
+                        <td><input name="PDFinfo.OnHand13" type="text" /></td>
+                        <td><input name="PDFinfo.Needed13" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Lightweight Disposable Tubing 6' (532316)
+                        </td>
+                        <td><input name="PDFinfo.OnHand14" type="text" /></td>
+                        <td><input name="PDFinfo.Needed14" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Premium Chin Strap (1012911)
+                        </td>
+                        <td><input name="PDFinfo.OnHand15" type="text" /></td>
+                        <td><input name="PDFinfo.Needed15" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Tubing 6' (1032907)
+
+                        </td>
+                        <td><input name="PDFinfo.OnHand16" type="text" /></td>
+                        <td><input name="PDFinfo.Needed16" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            DreamWisp (1137953)
+
+
+                        </td>
+                        <td><input name="PDFinfo.OnHand17" type="text" /></td>
+                        <td><input name="PDFinfo.Needed17" type="text" /></td>
+                    </tr>
+                  
+        </tbody>
+    </table>
+    <label>Technician Name: </label> <input type="Text" name="PDFinfo.Technician" />
+    </br>
+    <input type="submit" value="Submit Form" onclick="return confirm('Are you sure you want to submit the form?');" />
+</form>
+
+
+

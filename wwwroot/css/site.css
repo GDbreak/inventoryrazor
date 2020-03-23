@@ -6,7 +6,11 @@ a.navbar-brand {
   text-align: center;
   word-break: break-all;
 }
-
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 /* Provide sufficient contrast against white background */
 a {
   color: #0366d6;

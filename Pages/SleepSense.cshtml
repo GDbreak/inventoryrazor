@@ -1,0 +1,115 @@
+﻿@page
+@model UnitedSleepInventoryForms.SleepSenseModel
+@{
+    ViewData["Title"] = "SleepSense";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1><label name="PDFinfo.Subject">SleepSense Inventory Checklist</label></h1>
+
+<form method="post">
+    <table class="table">
+        <tr>
+            <th style="text-align:left;">Medical Supplies</th>
+            <th style="text-align:left;">Amount Onhand</th>
+            <th style="text-align:left;">Amount Needed</th>
+        </tr>
+        <tbody>
+            <tr>
+                <td>Thermocan Pressure Cannula (15807) </td>
+                <td><input name="PDFinfo.OnHand1" type="text" /></td>
+                <td><input name="PDFinfo.Needed1" type="text" /></td>
+            </tr>
+            <tr>
+                <td>HST Pressure Cannula (15805-FT)  </td>
+                <td><input name="PDFinfo.OnHand2" type="text" /></td>
+                <td><input name="PDFinfo.Needed2" type="text" /></td>
+            </tr>
+            <tr>
+                <td>9003-L60 Belt </td>
+                <td><input name="PDFinfo.OnHand3" type="text" /></td>
+                <td><input name="PDFinfo.Needed3" type="text" /></td>
+            </tr>
+            <tr>
+                <td>9003-L90 Belt </td>
+                <td><input name="PDFinfo.OnHand4" type="text" /></td>
+                <td><input name="PDFinfo.Needed4" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    9003-L120 Belt
+                </td>
+                <td><input name="PDFinfo.OnHand5" type="text" /></td>
+                <td><input name="PDFinfo.Needed5" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    9003-L150 Belt
+                </td>
+                <td><input name="PDFinfo.OnHand6" type="text" /></td>
+                <td><input name="PDFinfo.Needed6" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    9201-KIT Multi-RIP Module
+                </td>
+                <td><input name="PDFinfo.OnHand7" type="text" /></td>
+                <td><input name="PDFinfo.Needed7" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Adb Belt (9101)
+
+                </td>
+                <td><input name="PDFinfo.OnHand8" type="text" /></td>
+                <td><input name="PDFinfo.Needed8" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Chest Belt (9102)
+
+
+                </td>
+                <td><input name="PDFinfo.OnHand9" type="text" /></td>
+                <td><input name="PDFinfo.Needed9" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Thermocan (1475)
+
+
+                </td>
+                <td><input name="PDFinfo.OnHand10" type="text" /></td>
+                <td><input name="PDFinfo.Needed10" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Snore Mic. (1250)
+                </td>
+                <td><input name="PDFinfo.OnHand11" type="text" /></td>
+                <td><input name="PDFinfo.Needed11" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Pediatric Thermister (1401P)
+                </td>
+                <td><input name="PDFinfo.OnHand12" type="text" /></td>
+                <td><input name="PDFinfo.Needed12" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Pulse Oximetry for HST (8110-T100A090)
+
+                </td>
+                <td><input name="PDFinfo.OnHand13" type="text" /></td>
+                <td><input name="PDFinfo.Needed13" type="text" /></td>
+            </tr>
+        </tbody>
+    </table>
+    <label>Technician Name: </label> <input type="Text" name="PDFinfo.Technician" />
+    </br>
+    <input type="submit" value="Submit Form" onclick="return confirm('Are you sure you want to submit the form?');" />
+</form>
+
+
+

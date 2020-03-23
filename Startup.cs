@@ -15,6 +15,7 @@ namespace UnitedSleepInventoryForms
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            System.IO.Directory.CreateDirectory(@"\\usdfileserver\sleeptech\Inventory\Sleep Lab Inventory Logs");
         }
 
         public IConfiguration Configuration { get; }

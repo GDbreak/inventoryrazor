@@ -1,0 +1,76 @@
+﻿@page
+@model UnitedSleepInventoryForms.NihonKohdenModel
+@{
+    ViewData["Title"] = "Inventory Checklist Nihon Kohden";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1><label name="PDFinfo.Subject">Nihon Kohden Inventory Checklist</label></h1>
+
+<form method="post">
+    <table class="table">
+        <thead>
+        <th style="text-align:left;">Medical Supplies</th>
+        <th style="text-align:left;">Amount Onhand</th>
+        <th style="text-align:left;">Amount Needed</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nasal Adapter End Tidal USD (YG-125T)</td>
+                <td><input name="PDFinfo.YG125TOnHand" type="text" /></td>
+                <td><input name="PDFinfo.YG125TNeeded" type="text" /></td>
+            </tr>
+            <tr>
+                <td>Nasal Adapter Ped End Tidal USD (YG-135T)</td>
+                <td><input name="PDFinfo.YG135TOnHand" type="text" /></td>
+                <td><input name="PDFinfo.YG135TNeeded" type="text" /></td>
+            </tr>
+            <tr>
+                <td>Nasal Adapter Adult End Tidal NW (YG-225T)</td>
+                <td><input name="PDFinfo.YG225TOnHand" type="text" /></td>
+                <td><input name="PDFinfo.YG225TNeeded" type="text" /></td>
+            </tr>
+            <tr>
+                <td>Nasal Adapter Ped End Tidal NW (YG-235T)</td>
+                <td><input name="PDFinfo.YG235TOnHand" type="text" /></td>
+                <td><input name="PDFinfo.YG235TNeeded" type="text" /></td>
+            </tr>
+            <tr>
+                <td>Head-Box PSG 1100 (JB-110A)</td>
+                <td><input name="PDFinfo.JB110AOnHand" type="text" /></td>
+                <td><input name="PDFinfo.JB110ANeeded" type="text" /></td>
+            </tr>
+            <tr>
+                <td>Sp02 Adapter (JL-550T1)</td>
+                <td><input name="PDFinfo.JL550T1OnHand" type="text" /></td>
+                <td><input name="PDFinfo.JL550T1Needed" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    C02 Sensor (TG-921T3)
+                </td>
+                <td><input name="PDFinfo.TG921T3OnHand" type="text" /></td>
+                <td><input name="PDFinfo.TG921T3Needed" type="text" /></td>
+            </tr>
+            <tr>
+                <td>Finger Probe Sensor (TL-631T3)</td>
+                <td><input name="PDFinfo.TL631T3OnHand" type="text" /></td>
+                <td><input name="PDFinfo.TL631T3Needed" type="text" /></td>
+            </tr>
+            <tr>
+                <td>Head Box JE-915A</td>
+                <td><input name="PDFinfo.JE915AOnHand" type="text" /></td>
+                <td><input name="PDFinfo.JE915ANeeded" type="text" /></td>
+            </tr>
+            <tr>
+                <td>Cable for JE-915A (683485B)</td>
+                <td><input name="PDFinfo.JE915A683485BOnHand" type="text" /></td>
+                <td><input name="PDFinfo.JE915A683485BNeeded" type="text" /></td>
+            </tr>
+        </tbody>
+
+    </table>
+    <label>Technician Name: </label> <input type="Text" name="PDFinfo.Technician" />
+    </br>
+    <input type="submit" value="Submit Form" onclick="return confirm('Are you sure you want to submit the form?');" />
+</form>

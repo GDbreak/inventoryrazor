@@ -1,0 +1,410 @@
+﻿@page
+@model UnitedSleepInventoryForms.LabModel
+@{
+    ViewData["Title"] = "Lab";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1><label name="PDFinfo.Subject">Lab Inventory Checklist</label></h1>
+
+<form method="post">
+    <table class="table">
+        <thead>
+        <th style="text-align:left;">Medical Supplies</th>
+        <th style="text-align:left;">Amount Onhand</th>
+        <th style="text-align:left;">Amount Needed</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>10-20 paste</td>
+                <td><input name="PDFinfo.OnHand1" type="text" /></td>
+                <td><input name="PDFinfo.Needed1" type="text" /></td>
+            </tr>
+            <tr>
+                <td>Wave-Prep</td>
+                <td><input name="PDFinfo.OnHand2" type="text" /></td>
+                <td><input name="PDFinfo.Needed2" type="text" /></td>
+            </tr>
+            <tr>
+                <td>Alcohol wipes</td>
+                <td><input name="PDFinfo.OnHand3" type="text" /></td>
+                <td><input name="PDFinfo.Needed3" type="text" /></td>
+            </tr>
+            <tr>
+                <td>2 X 2 Gauze</td>
+                <td><input name="PDFinfo.OnHand4" type="text" /></td>
+                <td><input name="PDFinfo.Needed4" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    4 X 4 Gauze
+                </td>
+                <td><input name="PDFinfo.OnHand5" type="text" /></td>
+                <td><input name="PDFinfo.Needed5" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    3M Transpore tape
+                </td>
+                <td><input name="PDFinfo.OnHand6" type="text" /></td>
+                <td><input name="PDFinfo.Needed6" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Papertape
+                </td>
+                <td><input name="PDFinfo.OnHand7" type="text" /></td>
+                <td><input name="PDFinfo.Needed7" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Cover-Roll
+                </td>
+                <td><input name="PDFinfo.OnHand8" type="text" /></td>
+                <td><input name="PDFinfo.Needed8" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    6 " Q-tips
+                </td>
+                <td><input name="PDFinfo.OnHand9" type="text" /></td>
+                <td><input name="PDFinfo.Needed9" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    3 " Q-tips
+                </td>
+                <td><input name="PDFinfo.OnHand10" type="text" /></td>
+                <td><input name="PDFinfo.Needed10" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    3 " Puffy Q-tips
+                </td>
+                <td><input name="PDFinfo.OnHand11" type="text" /></td>
+                <td><input name="PDFinfo.Needed11" type="text" /></td>
+            </tr>
+
+            <tr>
+                <td>
+                    Tongue depressor
+                </td>
+                <td><input name="PDFinfo.OnHand12" type="text" /></td>
+                <td><input name="PDFinfo.Needed12" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Leg stickers
+                </td>
+                <td><input name="PDFinfo.OnHand13" type="text" /></td>
+                <td><input name="PDFinfo.Needed13" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    EKG stickers
+                </td>
+                <td><input name="PDFinfo.OnHand14" type="text" /></td>
+                <td><input name="PDFinfo.Needed14" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    EKG Leads
+                </td>
+                <td><input name="PDFinfo.OnHand15" type="text" /></td>
+                <td><input name="PDFinfo.Needed15" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Poseys
+                </td>
+                <td><input name="PDFinfo.OnHand16" type="text" /></td>
+                <td><input name="PDFinfo.Needed16" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Small Gloves
+                </td>
+                <td><input name="PDFinfo.OnHand17" type="text" /></td>
+                <td><input name="PDFinfo.Needed17" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Medium Gloves
+                </td>
+                <td><input name="PDFinfo.OnHand18" type="text" /></td>
+                <td><input name="PDFinfo.Needed18" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Large Gloves
+                </td>
+                <td><input name="PDFinfo.OnHand19" type="text" /></td>
+                <td><input name="PDFinfo.Needed19" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Extra Large Gloves
+                </td>
+                <td><input name="PDFinfo.OnHand20" type="text" /></td>
+                <td><input name="PDFinfo.Needed20" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Nail Polish Remover Pads
+                </td>
+                <td><input name="PDFinfo.OnHand21" type="text" /></td>
+                <td><input name="PDFinfo.Needed21" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Souffle Cups
+                </td>
+                <td><input name="PDFinfo.OnHand22" type="text" /></td>
+                <td><input name="PDFinfo.Needed22" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Adhesive wipes
+                </td>
+                <td><input name="PDFinfo.OnHand23" type="text" /></td>
+                <td><input name="PDFinfo.Needed23" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Sani-wipes
+                </td>
+                <td><input name="PDFinfo.OnHand24" type="text" /></td>
+                <td><input name="PDFinfo.Needed24" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Clorox Wipes
+                </td>
+                <td><input name="PDFinfo.OnHand25" type="text" /></td>
+                <td><input name="PDFinfo.Needed25" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Scrubs
+                </td>
+                <td><input name="PDFinfo.OnHand26" type="text" /></td>
+                <td><input name="PDFinfo.Needed26" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Keys
+
+                </td>
+                <td><input name="PDFinfo.OnHand27" type="text" /></td>
+                <td><input name="PDFinfo.Needed27" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Blue Scissors
+
+                </td>
+                <td><input name="PDFinfo.OnHand28" type="text" /></td>
+                <td><input name="PDFinfo.Needed28" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Batteries AA
+
+                </td>
+                <td><input name="PDFinfo.OnHand29" type="text" /></td>
+                <td><input name="PDFinfo.Needed29" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Batteries AAA
+
+                </td>
+                <td><input name="PDFinfo.OnHand30" type="text" /></td>
+                <td><input name="PDFinfo.Needed30" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    ULTRA LIFE 9V EEG
+
+                </td>
+                <td><input name="PDFinfo.OnHand31" type="text" /></td>
+                <td><input name="PDFinfo.Needed31" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Staples
+                </td>
+                <td><input name="PDFinfo.OnHand32" type="text" /></td>
+                <td><input name="PDFinfo.Needed32" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Paperclips
+                </td>
+                <td><input name="PDFinfo.OnHand33" type="text" /></td>
+                <td><input name="PDFinfo.Needed33" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Pens
+                </td>
+                <td><input name="PDFinfo.OnHand34" type="text" /></td>
+                <td><input name="PDFinfo.Needed34" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Paper
+                </td>
+                <td><input name="PDFinfo.OnHand35" type="text" /></td>
+                <td><input name="PDFinfo.Needed35" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Deep Cup Disp EEG Leads
+
+                </td>
+                <td><input name="PDFinfo.OnHand36" type="text" /></td>
+                <td><input name="PDFinfo.Needed36" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Web Cup Disp EEG Leads
+
+                </td>
+                <td><input name="PDFinfo.OnHand37" type="text" /></td>
+                <td><input name="PDFinfo.Needed37" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Surgical Masks
+
+                </td>
+                <td><input name="PDFinfo.OnHand38" type="text" /></td>
+                <td><input name="PDFinfo.Needed38" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Hair Combs
+
+                </td>
+                <td><input name="PDFinfo.OnHand39" type="text" /></td>
+                <td><input name="PDFinfo.Needed39" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Baby Oil
+
+                </td>
+                <td><input name="PDFinfo.OnHand40" type="text" /></td>
+                <td><input name="PDFinfo.Needed40" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Protective Glasses
+
+                </td>
+                <td><input name="PDFinfo.OnHand41" type="text" /></td>
+                <td><input name="PDFinfo.Needed41" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Collodion Remover
+                </td>
+                <td><input name="PDFinfo.OnHand42" type="text" /></td>
+                <td><input name="PDFinfo.Needed42" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Cotton Balls
+                </td>
+                <td><input name="PDFinfo.OnHand43" type="text" /></td>
+                <td><input name="PDFinfo.Needed43" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    China Markers
+                </td>
+                <td><input name="PDFinfo.OnHand44" type="text" /></td>
+                <td><input name="PDFinfo.Needed44" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Measuring Tape Auto
+                </td>
+                <td><input name="PDFinfo.OnHand45" type="text" /></td>
+                <td><input name="PDFinfo.Needed45" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Measuring Tape Disposable
+
+                </td>
+                <td><input name="PDFinfo.OnHand46" type="text" /></td>
+                <td><input name="PDFinfo.Needed46" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Surgi-Last GL 705 (PEDS)
+
+                </td>
+                <td><input name="PDFinfo.OnHand47" type="text" /></td>
+                <td><input name="PDFinfo.Needed47" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Surgi-Last GL 707 (ADULT)
+
+                </td>
+                <td><input name="PDFinfo.OnHand48" type="text" /></td>
+                <td><input name="PDFinfo.Needed48" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Stretch Gauze EEG 4x4
+
+                </td>
+                <td><input name="PDFinfo.OnHand49" type="text" /></td>
+                <td><input name="PDFinfo.Needed49" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Puff Q Tips
+
+                </td>
+                <td><input name="PDFinfo.OnHand50" type="text" /></td>
+                <td><input name="PDFinfo.Needed50" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    CF Cards
+
+                </td>
+                <td><input name="PDFinfo.OnHand51" type="text" /></td>
+                <td><input name="PDFinfo.Needed51" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Junk Drives
+
+                </td>
+                <td><input name="PDFinfo.OnHand52" type="text" /></td>
+                <td><input name="PDFinfo.Needed52" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Wire Cover
+
+                </td>
+                <td><input name="PDFinfo.OnHand53" type="text" /></td>
+                <td><input name="PDFinfo.Needed53" type="text" /></td>
+            </tr>
+
+        </tbody>
+
+    </table>
+    <label>Technician Name: </label> <input type="Text" name="PDFinfo.Technician" />
+    </br>
+    <input type="submit" value="Submit Form" onclick="return confirm('Are you sure you want to submit the form?');" />
+</form>
+
+

@@ -1,0 +1,260 @@
+﻿@page
+@model UnitedSleepInventoryForms.ResMedModel
+@{
+    ViewData["Title"] = "ResMed";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1><label name="PDFinfo.Subject">ResMed Inventory Checklist</label></h1>
+
+<form method="post">
+    <table class="table">
+        <tr>
+            <th style="text-align:left;">Masks</th>
+        </tr>
+        <tr>
+        <th style="text-align:left;">Medical Supplies</th>
+        <th style="text-align:left;">Amount Onhand</th>
+        <th style="text-align:left;">Amount Needed</th>
+        </tr>
+        <tbody>
+            <tr>
+                <td>Mirage Quattro FFM Size Small (61233)</td>
+                <td><input name="PDFinfo.OnHand1" type="text" /></td>
+                <td><input name="PDFinfo.Needed1" type="text" /></td>
+            </tr>
+            <tr>
+                <td>Mirage Quattro FFM Size Medium (61234) </td>
+<td><input name="PDFinfo.OnHand2" type="text" /></td>
+                <td><input name="PDFinfo.Needed2" type="text" /></td>
+            </tr>
+            <tr>
+                <td>Mirage Quattro FFM Size Large (61235)</td>
+                <td><input name="PDFinfo.OnHand3" type="text" /></td>
+                <td><input name="PDFinfo.Needed3" type="text" /></td>
+            </tr>
+            <tr>
+                <td>Swift FX SLM (61508) </td>
+                <td><input name="PDFinfo.OnHand4" type="text" /></td>
+                <td><input name="PDFinfo.Needed4" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Quattro FX Size Small (61715)
+                </td>
+                <td><input name="PDFinfo.OnHand5" type="text" /></td>
+                <td><input name="PDFinfo.Needed5" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Quattro FX Size Medium (61716)
+                </td>
+                <td><input name="PDFinfo.OnHand6" type="text" /></td>
+                <td><input name="PDFinfo.Needed6" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Quattro FX Size Large (61717)
+                </td>
+                <td><input name="PDFinfo.OnHand7" type="text" /></td>
+                <td><input name="PDFinfo.Needed7" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Mirage FX Nasal Standard (62104)
+
+                </td>
+                <td><input name="PDFinfo.OnHand8" type="text" /></td>
+                <td><input name="PDFinfo.Needed8" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Mirage FX Nasal Wide (62119)
+
+                </td>
+                <td><input name="PDFinfo.OnHand9" type="text" /></td>
+                <td><input name="PDFinfo.Needed9" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Airfit P10 SLM (62925)
+
+                </td>
+                <td><input name="PDFinfo.OnHand10" type="text" /></td>
+                <td><input name="PDFinfo.Needed10" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    AirTouch F20 Size Small (63005)
+                </td>
+                <td><input name="PDFinfo.OnHand11" type="text" /></td>
+                <td><input name="PDFinfo.Needed11" type="text" /></td>
+            </tr>
+
+            <tr>
+                <td>
+                    AirTouch F20 Size Medium (63006)
+                </td>
+                <td><input name="PDFinfo.OnHand12" type="text" /></td>
+                <td><input name="PDFinfo.Needed12" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    AirTouch F20 Size Large (63007)
+
+                </td>
+                <td><input name="PDFinfo.OnHand13" type="text" /></td>
+                <td><input name="PDFinfo.Needed13" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    AirFit F10 FFM SLM Size Small (63129)
+                </td>
+                <td><input name="PDFinfo.OnHand14" type="text" /></td>
+                <td><input name="PDFinfo.Needed14" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    AirFit F10 FFM SLM Size Medium (63130)
+                </td>
+                <td><input name="PDFinfo.OnHand15" type="text" /></td>
+                <td><input name="PDFinfo.Needed15" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    AirFit F10 FFM SLM Size Large (63131)
+
+                </td>
+                <td><input name="PDFinfo.OnHand16" type="text" /></td>
+                <td><input name="PDFinfo.Needed16" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    AirFit F20 Size Small (63445)
+
+                </td>
+                <td><input name="PDFinfo.OnHand17" type="text" /></td>
+                <td><input name="PDFinfo.Needed17" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    AirFit F20 Size Medium (63446)
+                </td>
+                <td><input name="PDFinfo.OnHand18" type="text" /></td>
+                <td><input name="PDFinfo.Needed18" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    AirFit F20 Size Large (63447)
+
+                </td>
+                <td><input name="PDFinfo.OnHand19" type="text" /></td>
+                <td><input name="PDFinfo.Needed19" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    AirFit N20 Size Small (63504)
+                </td>
+                <td><input name="PDFinfo.OnHand20" type="text" /></td>
+                <td><input name="PDFinfo.Needed20" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    AirFit N20 Size Medium (63506)
+                </td>
+                <td><input name="PDFinfo.OnHand21" type="text" /></td>
+                <td><input name="PDFinfo.Needed21" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    AirFit N20 Size Large (63507)
+                </td>
+                <td><input name="PDFinfo.OnHand22" type="text" /></td>
+                <td><input name="PDFinfo.Needed22" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    AirFit F30 Size Small (64104)
+
+                </td>
+                <td><input name="PDFinfo.OnHand23" type="text" /></td>
+                <td><input name="PDFinfo.Needed23" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    AirFit F30 Size Medium (64105)
+                </td>
+                <td><input name="PDFinfo.OnHand24" type="text" /></td>
+                <td><input name="PDFinfo.Needed24" type="text" /></td>
+            </tr>
+            </tbody>
+            </table>
+    <table class="table">
+        <tr>
+            <th style="text-align:left;">Other supplies</th>
+        </tr>
+        <tr>
+        <th style="text-align:left;">Medical Supplies</th>
+        <th style="text-align:left;">Amount Onhand</th>
+        <th style="text-align:left;">Amount Needed</th>
+        </tr>
+        <tbody>
+            <tr>
+                <td>
+                    XPOD (22305)
+                </td>
+                <td><input name="PDFinfo.OnHand25" type="text" /></td>
+                <td><input name="PDFinfo.Needed25" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    EasySense Respiratory Effort Sensor (22321)
+                </td>
+                <td><input name="PDFinfo.OnHand26" type="text" /></td>
+                <td><input name="PDFinfo.Needed26" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    XPOD Clip (22371)
+
+                </td>
+                <td><input name="PDFinfo.OnHand27" type="text" /></td>
+                <td><input name="PDFinfo.Needed27" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Apnea Link Air Bag (22373)
+                </td>
+                <td><input name="PDFinfo.OnHand28" type="text" /></td>
+                <td><input name="PDFinfo.Needed28" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Upload Cable for Apnea Link Plus (629051)
+
+                </td>
+                <td><input name="PDFinfo.OnHand29" type="text" /></td>
+                <td><input name="PDFinfo.Needed29" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Reusable Belt (629052)
+
+                </td>
+                <td><input name="PDFinfo.OnHand30" type="text" /></td>
+                <td><input name="PDFinfo.Needed30" type="text" /></td>
+            </tr>
+            <tr>
+                <td>
+                    Battery Cover (19683)
+                </td>
+                <td><input name="PDFinfo.OnHand31" type="text" /></td>
+                <td><input name="PDFinfo.Needed31" type="text" /></td>
+            </tr>
+        </tbody>
+    </table>
+    <label>Technician Name: </label> <input type="Text" name="PDFinfo.Technician" />
+    </br>
+    <input type="submit" value="Submit Form" onclick="return confirm('Are you sure you want to submit the form?');" />
+</form>
+
