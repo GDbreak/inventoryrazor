@@ -227,7 +227,27 @@ namespace UnitedSleepInventoryForms
         public string OnHand53 { get; set; }
         [Required]
         public string Needed53 { get; set; }
+        [Required]
+        public string OnHand54 { get; set; }
+        [Required]
+        public string Needed54 { get; set; }
+        [Required]
+        public string OnHand55 { get; set; }
+        [Required]
+        public string Needed55 { get; set; }
 
+        [Required]
+        public string OnHand56 { get; set; }
+        [Required]
+        public string Needed56 { get; set; }
+        [Required]
+        public string OnHand57 { get; set; }
+        [Required]
+        public string Needed57 { get; set; }
+        [Required]
+        public string OnHand58 { get; set; }
+        [Required]
+        public string Needed58 { get; set; }
     }
 
     public class LabModel : PageModel
@@ -504,6 +524,26 @@ namespace UnitedSleepInventoryForms
                 sb.Append("<td> Wire Cover </td>");
                 sb.Append("<td>" + PDFinfo.OnHand53 + "</td>");
                 sb.Append("<td>" + PDFinfo.Needed53 + "</td>");
+                sb.Append("</tr>");
+                sb.Append("<td> N95 Surgical Masks </td>");
+                sb.Append("<td>" + PDFinfo.OnHand54 + "</td>");
+                sb.Append("<td>" + PDFinfo.Needed54 + "</td>");
+                sb.Append("</tr>");
+                sb.Append("<td> Surgical Masks </td>");
+                sb.Append("<td>" + PDFinfo.OnHand55 + "</td>");
+                sb.Append("<td>" + PDFinfo.Needed55 + "</td>");
+                sb.Append("</tr>");
+                sb.Append("<td> Protective Glasses </td>");
+                sb.Append("<td>" + PDFinfo.OnHand56 + "</td>");
+                sb.Append("<td>" + PDFinfo.Needed56 + "</td>");
+                sb.Append("</tr>");
+                sb.Append("<td> Disposable Leads 2.5M </td>");
+                sb.Append("<td>" + PDFinfo.OnHand57 + "</td>");
+                sb.Append("<td>" + PDFinfo.Needed57 + "</td>");
+                sb.Append("</tr>");
+                sb.Append("<td> Disposable Face Shields </td>");
+                sb.Append("<td>" + PDFinfo.OnHand58 + "</td>");
+                sb.Append("<td>" + PDFinfo.Needed58 + "</td>");
                 sb.Append("</tr>");
                 sb.Append("</table>");
                 PDFHelper.GeneratePdf(sb.ToString(), HttpContext.Connection.RemoteIpAddress.ToString(), "Lab Inventory CheckList");

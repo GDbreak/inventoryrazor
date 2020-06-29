@@ -32,6 +32,7 @@ namespace UnitedSleepInventoryForms.Helpers
                  {"192.168.4.", "Shirley"},
                 { "192.168.10.", "StJoseph" },
                 {"192.168.20.", "StCharles" },
+                {"192.168.21.", "StCatherine" },
             };
         
         }
