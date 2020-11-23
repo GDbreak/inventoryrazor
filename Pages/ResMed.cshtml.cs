@@ -139,7 +139,14 @@ namespace UnitedSleepInventoryForms
         public string OnHand31 { get; set; }
         [Required]
         public string Needed31 { get; set; }
-
+        [Required] 
+        public string OnHand32 { get; set; }
+        [Required]
+        public string Needed32 { get; set; }
+        [Required]
+        public string OnHand33 { get; set; }
+        [Required]
+        public string Needed33 { get; set; }
     }
     public class ResMedModel : PageModel
     {
@@ -307,6 +314,12 @@ namespace UnitedSleepInventoryForms
                 sb.Append("</tr>");
                 sb.Append("<tr>");
                 sb.Append("<td> Battery Cover (19683)</ td><td>" + PDFinfo.OnHand31 + "</td><td>" + PDFinfo.Needed31 + "</td>");
+                sb.Append("</tr>");
+                sb.Append("<tr>");
+                sb.Append("<td> F30i Medium</ td><td>" + PDFinfo.OnHand32 + "</td><td>" + PDFinfo.Needed32 + "</td>");
+                sb.Append("</tr>");
+                sb.Append("<tr>");
+                sb.Append("<td> Chin Strap</ td><td>" + PDFinfo.OnHand33 + "</td><td>" + PDFinfo.Needed33 + "</td>");
                 sb.Append("</tr>");
                 sb.Append("</table>");
                 PDFHelper.GeneratePdf(sb.ToString(), HttpContext.Connection.RemoteIpAddress.ToString(), "ResMed Inventory CheckList");

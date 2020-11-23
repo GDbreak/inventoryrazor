@@ -67,6 +67,10 @@ namespace UnitedSleepInventoryForms
         public string OnHand13 { get; set; }
         [Required]
         public string Needed13 { get; set; }
+        [Required]
+        public string OnHand14 { get; set; }
+        [Required]
+        public string Needed14 { get; set; }
 
 
     }
@@ -149,7 +153,10 @@ namespace UnitedSleepInventoryForms
                 sb.Append("<td>" + PDFinfo.OnHand13 + "</td>");
                 sb.Append("<td>" + PDFinfo.Needed13 + "</td>");
                 sb.Append("</tr>");
-
+                sb.Append("<td> 9010 Reusable Belt </td>");
+                sb.Append("<td>" + PDFinfo.OnHand14 + "</td>");
+                sb.Append("<td>" + PDFinfo.Needed14 + "</td>");
+                sb.Append("</tr>");
 
                 sb.Append("</table>");
                 PDFHelper.GeneratePdf(sb.ToString(), HttpContext.Connection.RemoteIpAddress.ToString(), "SleepSense Inventory CheckList");

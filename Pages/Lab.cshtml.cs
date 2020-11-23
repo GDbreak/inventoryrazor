@@ -172,10 +172,6 @@ namespace UnitedSleepInventoryForms
         [Required]
         public string Needed39 { get; set; }
         [Required]
-        public string OnHand40 { get; set; }
-        [Required]
-        public string Needed40 { get; set; }
-        [Required]
         public string OnHand41 { get; set; }
         [Required]
         public string Needed41 { get; set; }
@@ -458,10 +454,6 @@ namespace UnitedSleepInventoryForms
                 sb.Append("<td>" + PDFinfo.Needed39 + "</td>");
                 sb.Append("</tr>");
                 sb.Append("<tr>");
-                sb.Append("<td> Baby Oil </td>");
-                sb.Append("<td>" + PDFinfo.OnHand40 + "</td>");
-                sb.Append("<td>" + PDFinfo.Needed40 + "</td>");
-                sb.Append("</tr>");
                 sb.Append("<tr>");
                 sb.Append("<td> Protective Glasses </ td><td>" + PDFinfo.OnHand41 + "</td><td>" + PDFinfo.Needed41 + "</td>");
                 sb.Append("</tr>");
