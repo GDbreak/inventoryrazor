@@ -244,6 +244,10 @@ namespace UnitedSleepInventoryForms
         public string OnHand58 { get; set; }
         [Required]
         public string Needed58 { get; set; }
+        [Required]
+        public string OnHand59 { get; set; }
+        [Required]
+        public string Needed59 { get; set; }
     }
 
     public class LabModel : PageModel
@@ -536,6 +540,11 @@ namespace UnitedSleepInventoryForms
                 sb.Append("<td> Disposable Face Shields </td>");
                 sb.Append("<td>" + PDFinfo.OnHand58 + "</td>");
                 sb.Append("<td>" + PDFinfo.Needed58 + "</td>");
+                sb.Append("</tr>");
+                sb.Append("</tr>");
+                sb.Append("<td> Nu-Prep </td>");
+                sb.Append("<td>" + PDFinfo.OnHand59 + "</td>");
+                sb.Append("<td>" + PDFinfo.Needed59 + "</td>");
                 sb.Append("</tr>");
                 sb.Append("</table>");
                 PDFHelper.GeneratePdf(sb.ToString(), HttpContext.Connection.RemoteIpAddress.ToString(), "Lab Inventory CheckList");
